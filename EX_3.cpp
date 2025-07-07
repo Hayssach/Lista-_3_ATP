@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main(){
-	int opcao, num1, num2;
+	int op, numero1, numero2;
 	 
 	 do {
     printf("\nCalculadora Simples\n");
@@ -12,30 +12,30 @@ int main(){
     printf("4. Divisao\n");
     printf("5. Sair\n");
     printf("Escolha uma opcao: ");
-    scanf("%d", &opcao);
+    scanf("%d", &op);
 
-    if (opcao >= 1 && opcao <= 4) {
+    if (op >= 1 && op <= 4) {
         printf("Digite dois numeros inteiros: ");
-        scanf("%d %d", &num1, &num2);
+        scanf("%d %d", &numero1, &numero2);
     }
 
-    if (opcao == 1) {
-        printf("Resultado: %d\n", num1 + num2);
-    } else if (opcao == 2) {
-        printf("Resultado: %d\n", num1 - num2);
-    } else if (opcao == 3) {
-        printf("Resultado: %d\n", num1 * num2);
-    } else if (opcao == 4) {
-        if (num2 != 0)
-            printf("Resultado: %d\n", num1 / num2);
+    if (op == 1) {
+        printf("Resultado: %d\n", numero1 + numero2);
+    } else if (op == 2) {
+        printf("Resultado: %d\n", numero1 - numero2);
+    } else if (op == 3) {
+        printf("Resultado: %d\n", numero1 * numero2);
+    } else if (op == 4) {
+        if (numero2 != 0)
+            printf("Resultado: %d\n", numero1 / numero2);
         else
             printf("Erro: Divisao por zero!\n");
-    } else if (opcao == 5) {
+    } else if (op == 5) {
         printf("Saindo...\n");
     } else {
         printf("Opcao invalida! Tente novamente.\n");
     }
-} while (opcao != 5);
+} while (op != 5);
    
    return(0);
 }
