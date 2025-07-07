@@ -2,21 +2,21 @@
 #include <stdio.h>
 
 int main(){
-	int num;
-	int fatorial;
+	int numero;
+	int f;
 	
-	printf("Digite um numero inteiro nao negativo:");
-	scanf("%d", &num);
+	printf("Digite um numero inteiro (nao negativo):");
+	scanf("%d", &numero);
 	
-	if(num < 0){
+	if(numero < 0){
 		printf("O fatorial nao pode ser um negativo!");
 	}else {
-		fatorial = 1;
-		for(int i = 1; i <= num; i++){
-			fatorial *= 1;
+		f = 1;
+		for(int i = 1; i <= numero; i++){
+			f *= 1;
 		}
-		printf("O fatorial de %d eh %d\n", num, fatorial);
+		printf("O fatorial de %d eh %d\n", numero, f);
 	}
-	scanf("%c");
+	getchar();
 	return(0);
 }
