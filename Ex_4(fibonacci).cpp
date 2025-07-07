@@ -2,32 +2,31 @@
 #include <stdlib.h>
 
 int main(){
-    int i, num;
-    int f = 0, c = 1, prox; //isso significa próximo
+    int j, numero;
+    int f = 0, c = 1, proximo; 
     
     //Solicitar um numero para a sequencia
-    printf("Digite um numero n (n-ésimo termo de Fibonacci)");
-    scanf("%d", &num);
+    printf("Digite um numero n (n-Ã©simo termo de Fibonacci)");
+    scanf("%d", &numero);
     
-    // Validar o valor de n
-    if(num <= 0){
+    if(numero <= 0){
         printf("Por favor digite um numero maior que 0.\n");
         return 1;
     }
   
-    // Exibir os primeiros termos da sequência de Fibonacci
-    printf("Sequência de Fibonacci até o %dº termo:", num);
+    // Exibir os primeiros termos da sequÃªncia de Fibonacci
+    printf("SequÃªncia de Fibonacci atÃ© o %dÂº termo:", numero);
     
-    for(i = 1; i <= num; i++){
-        if(i == 1){
-            printf("%d", f); // O primeiro termo é 0
-        }else if (i == 2) {
-            printf("%d ", c);  // O segundo termo é 1
+    for(j = 1; j <= numero; i++){
+        if(j == 1){
+            printf("%d", f); // 0
+        }else if (j == 2) {
+            printf("%d ", c);  // 1
         }else{
-            prox = f + c;  // O próximo termo é a soma dos dois anteriores
+            proximo = f + c;  
             f = c;
-            c = prox;
-            printf("%d ", prox);  // Imprime o próximo termo
+            c = proximo;
+            printf("%d ", proximo); 
         }
     }
     printf("\n");
