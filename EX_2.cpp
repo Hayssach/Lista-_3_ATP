@@ -2,16 +2,16 @@
 #include <stdio.h>
 
 int main(){
-int num, i, ehPrimo = 1; // 1 assume que é primo
+int numero, j, ehPrimo = 1; // 1 assume que Ã© primo
 
-    printf("Digite um número inteiro: ");
-    scanf("%d", &num);
+    printf("Digite um nÃºmero inteiro: ");
+    scanf("%d", &numero);
 
-    if (num <= 1) {
+    if (numero <= 1) {
         ehPrimo = 0;
     } else {
-        for (i = 2; i * i <= num; i++) {
-            if (num % i == 0) {
+        for (j = 2; j * j <= numero; j++) {
+            if (num % j == 0) {
                 ehPrimo = 0;
                 break;
             }
@@ -19,9 +19,9 @@ int num, i, ehPrimo = 1; // 1 assume que é primo
     }
 
     if (ehPrimo)
-        printf("%d é um número primo.\n", num);
+        printf("%d Ã© um nÃºmero primo.\n", numero);
     else
-        printf("%d não é um número primo.\n", num);
+        printf("%d nÃ£o Ã© um nÃºmero primo.\n", numero);
 	getchar();
 	return(0);
 }
