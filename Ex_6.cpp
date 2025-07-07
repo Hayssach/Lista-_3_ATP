@@ -2,19 +2,19 @@
 #include <stdlib.h>
 
 int main() {
-   int i, j, altura;
+   int i, g, h;
 
-    printf("Digite a altura do tri‚ngulo: ");
-    scanf("%d", &altura);
+    printf("Digite a altura do tri√¢ngulo: ");
+    scanf("%d", &h);
 
-    for (i = 1; i <= altura; i++) {
-        // EspaÁos antes dos asteriscos
-        for (j = 1; j <= altura - i; j++) {
+    for (i = 1; i <= h; i++) {
+        // Espa√ßos antes dos asteriscos
+        for (g = 1; g <= h - i; g++) {
             printf(" ");
         }
 
         // Asteriscos
-        for (j = 1; j <= (2 * i - 1); j++) {
+        for (g = 1; g <= (2 * i - 1); g++) {
             printf("*");
         }
 
