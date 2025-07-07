@@ -2,29 +2,29 @@
 #include <stdlib.h>
 
 int main(){
-    int h;
+    int j;
     printf("Digite o valor limite para a cadeia de Fibonacci: ");
-    scanf("%d", &h);
+    scanf("%d", &j);
 
-    int a = 0, b = 1, prox; // significa próximo
+    int b = 0, c = 1, proximo; 
 
-    printf("Cadeia de Fibonacci até %d:\n", h);
+    printf("Cadeia de Fibonacci atÃ© %d:\n", h);
 
     // Imprime o primeiro termo
-    if (h >= 0)
-        printf("%d", a);
+    if (j >= 0)
+        printf("%d", b);
     
-    // Imprime o segundo termo, se necessário
-    if (h >= 1)
-        printf(", %d", b);
+    // Imprime o segundo termo
+    if (j >= 1)
+        printf(", %d", c);
         
-    // Gera os próximos termos da cadeia
-    prox = a + b;
-    while (prox <= h) {
-        printf(", %d", prox);
-        a = b;
-        b = prox;
-        prox = a + b;
+    // Gera os prÃ³ximos termos da cadeia
+    proximo = b + c;
+    while (proximo <= j) {
+        printf(", %d", proximo);
+        b = c;
+        c = proximo;
+        proximo = b + c;
     }
     getchar();
     printf("\n");
